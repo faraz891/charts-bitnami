@@ -7,7 +7,7 @@ pipeline {
                         sh 'cp -R bitnami/nginx/* .'
 		        sh 'ls -ltr'
                         sh 'pwd'
-                        sh '/usr/local/bin/helm upgrade --install my-jenkins nginx   
+                        sh '/usr/local/bin/helm upgrade --install my-jenkins nginx'   
               			
             }           
         }
