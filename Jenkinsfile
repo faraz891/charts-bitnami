@@ -5,7 +5,7 @@ pipeline {
             steps {           
                        
                         sh '/usr/local/bin/helm repo add bitnami https://charts.bitnami.com/bitnami'
-                        sh '/usr/local/bin/helm install my-jenkins nginx'   
+                        sh '/usr/local/bin/helm install my-jenkins bitnami/nginx'   
               			
             }           
         }
