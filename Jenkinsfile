@@ -4,10 +4,10 @@ pipeline {
         stage('Build on k8 ') {
             steps {           
                         sh 'pwd'
-                        sh 'cp -R helm/* .'
+                        sh 'cp -R bitnami/nginx/* .'
 		        sh 'ls -ltr'
                         sh 'pwd'
-                        sh '/usr/local/bin/helm upgrade --install my-jenkins   
+                        sh '/usr/local/bin/helm upgrade --install my-jenkins nginx   
               			
             }           
         }
